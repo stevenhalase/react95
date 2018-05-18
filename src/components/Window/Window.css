@@ -1,0 +1,146 @@
+.Window {
+  position: relative;
+  font-family: 'VT323', monospace;
+  background-color: #C0C0C0;
+  color: #000000;
+  font-size: 12px;
+  padding: 2px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+  z-index: 3;
+}
+
+.Window:before {
+  position: absolute;
+  content: '';
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 3px);
+  height: calc(100% + 3px);
+  border-top: 1px solid #c0c7c8;
+  border-left: 1px solid #c0c7c8;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.Window:after {
+  position: absolute;
+  content: '';
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.Window-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 18px;
+  background-color: #0000a8;
+  color: #fff;
+  font-weight: bold;
+}
+
+.Window-header-information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3px;
+}
+
+.Window-header-icon {
+  margin-right: 3px;
+  width: 14px;
+  height: 14px;
+}
+
+.Window-header-buttons {
+  
+}
+
+.Window-header-buttons-close {
+  margin: 0 3px;
+}
+
+.Window-content {
+  flex: 1;
+}
+
+.Window-footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 10px 10px 0;
+}
+
+.Window-footer-button-container {
+  display: inline-block;
+}
+
+.Window-footer-button-container:first-child {
+  margin-right: 7px;
+}
+
+.Window-content {
+  position: relative;
+  min-width: 300px;
+  min-height: 200px;
+  margin: 18px 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  z-index: 3;
+}
+
+.Window-content:before {
+  position: absolute;
+  content: '';
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 3px);
+  height: calc(100% + 3px);
+  border: 1px solid #87888f;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.Window-content:after {
+  position: absolute;
+  content: '';
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.Window-content-title {
+  position: absolute;
+  top: -9px;
+  left: 6px;
+  padding: 0 3px;
+  background-color: #C0C0C0;
+  z-index: 6;
+}
