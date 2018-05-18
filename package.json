@@ -11,13 +11,14 @@
     "react-storybook-decorator-background": "^1.0.5"
   },
   "scripts": {
-    "start": "npm run storybook",
+    "start": "node index.js",
     "start-scripts": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 443 -s public",
     "build-storybook": "build-storybook -s public",
+    "build-storybook-static": "build-storybook -c .storybook -o .out",
     "dev": "concurrently \"node index.js\" \"npm run start-scripts\""
   },
   "devDependencies": {
